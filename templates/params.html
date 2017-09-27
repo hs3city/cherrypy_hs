@@ -1,8 +1,0 @@
-{% for i in range(counter|int) %}
-    <p>To jest twoja {{ i }}
-        {{ template_param | capitalize }}</p>
-{% endfor %}
-
-{% for k in numbers | dictsort(by='value') %}
-    <p>{{ k }}</p>
-{% endfor %}
