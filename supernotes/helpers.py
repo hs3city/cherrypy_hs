@@ -7,5 +7,7 @@ env = jinja2.Environment(
 
 def render_template(template_name, context=None):
     template = env.get_template(template_name)
+    if context is None:
+        context = {}
     rendered_template = template.render(context)
     return rendered_template
